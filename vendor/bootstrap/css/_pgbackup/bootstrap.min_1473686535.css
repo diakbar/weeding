@@ -1688,6 +1688,7 @@ button,input,select,textarea
 
 a
 {
+    color: #61b733;
     text-decoration: none;
 }
 
@@ -5744,7 +5745,6 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
     border-color: #e7e7e7;
 }
 
-
 .navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover
 {
     color: #555;
@@ -8221,4 +8221,5 @@ button.close
     -webkit-filter: blur(12px);
     filter: blur(12px);
 }
+
 
