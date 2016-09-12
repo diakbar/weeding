@@ -36,7 +36,6 @@
         <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand page-scroll black bg-white navbar-bg black-hover" href="#page-top">Adhitya &amp; Aneta</a>
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span> Menu 
@@ -44,6 +43,7 @@
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <a class="navbar-brand page-scroll black bg-white navbar-bg black-hover" href="#page-top">Adhitya &amp; Aneta</a>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="hidden">
                             <a href="#page-top"></a>
@@ -492,16 +492,24 @@
                         <form role="form"> 
                             <div class="form-group"> 
                                 <label class="control-label" for="exampleInputName1">Your Name</label>                                 
-                                <input type="text" class="form-control input-sm" id="exampleInputName1" placeholder="Enter Name"> 
+                                <input type="email" class="form-control" id="exampleInputName1" placeholder="Enter Name"> 
                             </div>                             
                             <div class="form-group"> 
                                 <label class="control-label" for="exampleInputEmail1">Email &nbsp; &nbsp;&nbsp;
                                     <br>
-                                </label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email"> 
+                                </label>                                 
+                                <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter Email"> 
                             </div>                             
                             <div class="form-group"> 
-</div>                             
+                                <label class="control-label" for="exampleInputFile">File input</label>                                 
+                                <input type="file" id="exampleInputFile"> 
+                                <p class="help-block">Example block-level help text here.</p> 
+                            </div>                             
+                            <div class="checkbox"> 
+                                <label class="control-label"> 
+                                    <input type="checkbox"> Check me out                        
+                                </label>                                 
+                            </div>                             
                             <button type="submit" class="btn">Submit</button>                             
                         </form>
                         <button type="button" class="btn btn-primary" data-dismiss="modal">
