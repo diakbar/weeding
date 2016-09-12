@@ -110,7 +110,7 @@ function initMap(elem) {
         disableDoubleClickZoom: false,
         mapTypeControl: true,
         mapTypeControlOptions: {
-            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            style: google.maps.MapTypeControlStyle.DEFAULT,
         },
         scaleControl: true,
         scrollwheel: false,
@@ -118,15 +118,32 @@ function initMap(elem) {
         draggable : true,
         overviewMapControl: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-		styles: [{stylers:[{saturation:-100},{gamma:1}]},{elementType:"labels.text.stroke",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"geometry",stylers:[{visibility:"simplified"}]},{featureType:"water",stylers:[{visibility:"on"},{saturation:50},{gamma:0},{hue:"#50a5d1"}]},{featureType:"administrative.neighborhood",elementType:"labels.text.fill",stylers:[{color:"#333333"}]},{featureType:"road.local",elementType:"labels.text",stylers:[{weight:0.5},{color:"#333333"}]},{featureType:"transit.station",elementType:"labels.icon",stylers:[{gamma:1},{saturation:50}]}]
+		//styles: [{stylers:[{saturation:-100},{gamma:1}]},{elementType:"labels.text.stroke",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"geometry",stylers:[{visibility:"simplified"}]},{featureType:"water",stylers:[{visibility:"on"},{saturation:50},{gamma:0},{hue:"#50a5d1"}]},{featureType:"administrative.neighborhood",elementType:"labels.text.fill",stylers:[{color:"#333333"}]},{featureType:"road.local",elementType:"labels.text",stylers:[{weight:0.5},{color:"#333333"}]},{featureType:"transit.station",elementType:"labels.icon",stylers:[{gamma:1},{saturation:0}]}]
 		}
-                    
+    
+    var contentString = '<div class="info-window">' +
+            '<h3><center>Resepsi+Akad Nikah</center></h3>' +
+            '<div class="info-content">' +
+            '<center><p>Masjid Nasional Al - Akbar Surabaya</p></center>' +
+            '<center><a href="https://maps.google.com?saddr=Current+Location&daddr=masjid+al+akbar+surabaya">GET DIRECTION</a></center>'+
+            '</div>' +
+            '</div>' 
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        position: (-7.336694,112.715449),
+        maxWidth: 400
+    });                
     var map = new google.maps.Map($e.get(0), mapOptions);
     var marker = new google.maps.Marker({
     	icon: marker_image,
         map: map,
         position: map.getCenter() 
     });
+    infowindow.open(map, marker);
+        marker.addListener('click', function () {
+            infowindow.open(map, marker);
+        });
+
 }
 
 function initMaps() {
