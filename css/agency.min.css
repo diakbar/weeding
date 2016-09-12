@@ -933,7 +933,7 @@ peta-acara
 {
     .the-blur
     {
-        position: fixed;
+        position: absolute;
         width: 100%;
         min-height: 10%;
         #background: #f7f7f7;
