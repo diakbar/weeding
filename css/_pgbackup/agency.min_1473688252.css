@@ -193,6 +193,8 @@ a.active,a:active,a:focus,a:hover
 
 @media (min-width:768px)
 {
+@media (min-width:768px)
+{
     .navbar-custom
     {
         background-color: transparent;
@@ -202,8 +204,8 @@ a.active,a:active,a:focus,a:hover
         transition: padding .3s;
         border: none;
     }
-@media (min-width:768px)
-{
+}
+
     .navbar-custom .navbar-brand
     {
         font-size: 2em;
@@ -211,8 +213,6 @@ a.active,a:active,a:focus,a:hover
         -moz-transition: all .3s;
         transition: all .3s;
     }
-}
-
     .navbar-custom .navbar-nav>.active>a
     {
         border-radius: 3px;
@@ -927,34 +927,6 @@ peta-acara
 .kolom-peta-acara
 {
     background-color: #842626;
-}
-
-@media (min-width:768px)
-{
-    .the-blur
-    {
-        position: fixed;
-        width: 100%;
-        min-height: 10%;
-        #background: #f7f7f7;
-        background-image: url('../img/anetnyu.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        text-align: center;
-        color: #fff;
-        z-index: 1000;
-        -webkit-filter: blur(30px);
-        -moz-filter: blur(30px);
-        -o-filter: blur(30px);
-        -ms-filter: blur(30px);
-        filter: blur(30px);
-        display: block;
-    }
 }
 
 @media (max-width:479px)

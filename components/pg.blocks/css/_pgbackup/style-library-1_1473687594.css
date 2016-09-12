@@ -35,6 +35,12 @@ body
     background-color: #111111 !important;
 }
 
+.bg-white
+{
+    background-color: #fffff5 !important;
+}
+
+
 .bg-offwhite
 {
     background-color: #F5F5F5 !important;
@@ -524,9 +530,8 @@ body
 
 .guardsman-hover:hover
 {
-    color: #C2185B !important;
+    color: #D90000 !important;
 }
-
 
 .pomegranate-hover:hover
 {
@@ -1987,5 +1992,6 @@ fieldset[disabled] .form-control
 
 .navbar-bg
 {
+    border-radius: 10px;
 }
 
