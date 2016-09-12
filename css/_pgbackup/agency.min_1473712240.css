@@ -209,7 +209,7 @@ a.active,a:active,a:focus,a:hover
     }
     .navbar-custom.affix
     {
-        background-color: rgba(34, 34, 34, 0.95);
+        background-color: #222;
         padding: 10px 0;
     }
     .navbar-custom.affix .navbar-brand
