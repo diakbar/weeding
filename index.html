@@ -32,6 +32,14 @@
         <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
     </head>
     <body id="page-top" class="index">
+        <!-- Preload Page -->
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
         <!-- Navigation -->
         <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top navigasi-atas pad5">
             <div class="container">
@@ -57,7 +65,10 @@
                         <li>
 </li>
                         <li>
-                            <a class="page-scroll" href="#ofus">STORY OF US</a>
+                            <a class="page-scroll" href="#bridegroom">BRIDEGROOM</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#story">STORY OF US</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#wishlist">WISHLIST</a>
@@ -74,7 +85,7 @@
         <header>
             <div class="container">
                 <div class="intro-text">
-                    <div class="intro-lead-in">Welcome To Our Wedding Website</div>
+                    <div class="intro-lead-in" style="" data-animation-pro-trigger-1 data-animation-pro-target-1 data-animation-pro-init-state-1 data-animation-1 data-animation-trigger-1="load" data-animation-type-1="bounceIn">Welcome To Our Wedding Website</div>
                 </div>
             </div>
         </header>
@@ -84,7 +95,7 @@
                     <h2 class="white">Countdown to Wedding Day<br>18 Desember 2016</h2>
                     <div class="row countDown">
                         <div class="countDown-wrap countDown-wrap-kecil">
-                            <span class="digits" data-animation-1></span>
+                            <span class="digits"></span>
                             <input class="countDown-input day">
                             <div class="digits-label">days</div>
                         </div>
@@ -112,20 +123,20 @@
             <!-- /.container -->
         </section>
         <!-- Services Section -->
-        <section id="wedding" class="bg-white pad25 pad-bottom20">
+        <section id="wedding" class="bg-white pad25 pad-bottom20" data-animation-pro-1 style="" data-animation-pro-trigger-1="scroll" data-animation-pro-target-1=".info-akad, .info-resepsi, .wedding-title" data-animation-pro-duration-1="500" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-easing-1="linear" data-animation-pro-add-classes-1="test" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-target-2=".info-akad, .info-resepsi, .wedding-title" data-animation-pro-easing-2="linear" data-animation-pro-duration-2="500" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-200px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-target-3=".info-akad, .info-resepsi, .wedding-title" data-animation-pro-easing-3="ease-out-quad" data-animation-pro-duration-3="500" data-animation-pro-init-state-3="opacity:1;" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-100px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-target-4=".info-akad, .info-resepsi, .wedding-title" data-animation-pro-easing-4="ease-out-cubic" data-animation-pro-duration-4="500" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="350px">
             <div class="container">
                 <div class="row header-thewedding">
                     <div class="col-lg-12 text-center">
-                        <h1 class="section-heading">The Wedding</h1>
+                        <h1 class="section-heading wedding-title" style="opacity:0;">The Wedding</h1>
                     </div>
                 </div>
-                <div class="row text-center row-centered">
-                    <div class="col-md-4 col-centered" data-animation-1>
+                <div class="row text-center row-centered info-akad" style="opacity:0;">
+                    <div class="col-md-4 col-centered">
                         <span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary guardsman"></i><i class="fa fa-stack-1x fa-home white"></i></span>
                         <h4 class="service-heading">Akad Nikah</h4>
                         <p>Pukul 07.00 WIB<br>Masjid Al-Akbar Surabaya<br>Jl. Masjid Al-Akbar Timur No.1 Pagesangan,<br>Jawa Timur</p>
                     </div>
-                    <div class="col-md-4 col-centered">
+                    <div class="col-md-4 col-centered info-resepsi" style="opacity:0;">
                         <span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary guardsman"></i><i class="fa fa-stack-1x fa-heart white"></i></span>
                         <h4 class="service-heading">Resepsi</h4>
                         <p class="text-muted">Pukul 10.00 - 12.00 WIB<br>Ruang Marwah, Masjid Al-Akbar, Surabaya<br>Jl. Masjid Al-Akbar Timur No.1 Pagesangan,<br>Jawa Timur</p>
@@ -141,7 +152,7 @@
             <div class="container">
                 <!-- Start Row -->
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 rute">
                         <h2><h3><i class="fa-plane fa mdi-action-aspect-ratio fa-border"></i>Rute menuju Lokasi Acara</h3></h2>
                         <ul class="collapsible" data-collapsible="accordion"> 
                             <li> 
@@ -180,7 +191,7 @@
             </div>
         </section>
         <div class="map min-height-500px" data-map-zoom="15" data-map-lat="-7.336694" data-map-long="112.715449" data-marker-image="img/love-marker.png"></div>
-        <section id="ofus" class="bg-light-gray pad60 pad-bottom30">
+        <section id="bridegroom" class="bg-light-gray pad60 pad-bottom30">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Brides and Groom</h2>
@@ -189,8 +200,8 @@
             <div class="center-container">
                 <div class="center-row size-min">
                     <div class="center-row">
-                        <div class="team-member">
-                            <img src="img/groom.png" class="img-responsive img-circle groom" alt="">
+                        <div class="groom" data-animation-pro-1 style="opacity:0;" data-animation-pro-trigger-1="scroll" data-animation-pro-easing-1="ease-in-out-quad" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-100px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-easing-3="ease-in-quad" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-150px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-easing-4="ease-in-quad" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="300px">
+                            <img src="img/groom.png" class="img-responsive img-circle groom" alt="" style="">
                             <h4>M. Adhitya Akbar</h4>
                             <p class="text-muted">The Groom</p>
                             <ul class="list-inline social-buttons">
@@ -207,8 +218,8 @@
                         </div>
                     </div>
                     <div class="center-row size-min">
-                        <div class="team-member">
-                            <img src="img/brides.png" class="img-responsive img-circle brides" alt="">
+                        <div class="brides" data-animation-pro-1 style="opacity:0;" data-animation-pro-trigger-1="scroll" data-animation-pro-easing-1="ease-in-out-quad" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-100px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-easing-3="ease-in-quad" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-150px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-easing-4="ease-in-quad" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="300px">
+                            <img src="img/brides.png" class="img-responsive img-circle brides" alt="" style="">
                             <h4>Aneta</h4>
                             <p class="text-muted">The Brides</p>
                             <ul class="list-inline social-buttons">
@@ -227,23 +238,23 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="pad45 pad-bottom60">
+        <section id="story" class="story-of-us-section pad45 pad-bottom60">
             <div class="container">
                 <div class="row pad-bottom30">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Story of Us</h2>
+                        <h2 class="section-heading story-of-us-title" data-animation-pro-1 style="opacity:0;" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-trigger-1="scroll" data-animation-pro-target-1=".story-of-us-title" data-animation-pro-enable-sd-scroll-trigger-1="false" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="400px">Story of Us</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <ul class="timeline">
-                            <li>
+                            <li style="" data-animation-pro-1 style="opacity:0;" data-animation-pro-trigger-1="scroll" data-animation-pro-easing-1="ease-in-out-quad" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-100px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-easing-3="ease-in-quad" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-150px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-easing-4="ease-in-quad" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="300px">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/1.jpg" alt="" data-animation-1>
+                                    <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
                                 </div>
-                                <div class="timeline-panel" data-animation-1 style="">
-                                    <div class="timeline-heading" data-animation-1>
-                                        <h4 data-animation-1 data-animation-trigger-1="scroll" data-animation-type-1="bounceIn" data-animation-scroll-direction-1="down" data-animation-target-1=".timeline-image" data-animation-offset-1="1px" data-animation-to-remove-1="bounceInDown">2009-2011</h4>
+                                <div class="timeline-panel kotakcerita1">
+                                    <div class="timeline-heading">
+                                        <h4 class="tahun1">2009-2011</h4>
                                         <h4 class="subheading">Our Humble Beginnings</h4>
                                     </div>
                                     <div class="timeline-body">
@@ -251,9 +262,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="timeline-inverted">
+                            <li class="timeline-inverted" data-animation-pro-1 style="opacity:0;" data-animation-pro-trigger-1="scroll" data-animation-pro-easing-1="ease-in-out-quad" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-100px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-easing-3="ease-in-quad" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-150px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-easing-4="ease-in-quad" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="300px">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="" style="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -265,9 +276,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li data-animation-pro-1 style="opacity:0;" data-animation-pro-trigger-1="scroll" data-animation-pro-easing-1="ease-in-out-quad" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-100px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-easing-3="ease-in-quad" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-150px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-easing-4="ease-in-quad" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="300px">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                    <img class="img-circle img-responsive" src="img/about/3.jpg" alt="" style="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -279,9 +290,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="timeline-inverted">
+                            <li class="timeline-inverted" data-animation-pro-1 style="opacity:0;" data-animation-pro-trigger-1="scroll" data-animation-pro-easing-1="ease-in-out-quad" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-100px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-easing-3="ease-in-quad" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-150px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-easing-4="ease-in-quad" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="300px">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                    <img class="img-circle img-responsive" src="img/about/4.jpg" alt="" style="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -293,7 +304,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="timeline-inverted">
+                            <li class="timeline-inverted" data-animation-pro-1 style="opacity:0;" data-animation-pro-trigger-1="scroll" data-animation-pro-easing-1="ease-in-out-quad" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-100px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-easing-3="ease-in-quad" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-150px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-easing-4="ease-in-quad" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="300px">
                                 <div class="timeline-image">
                                     <h4 class="timeline-h4">Be Part<br>Of Our<br>Story!</h4>
                                 </div>
@@ -654,5 +665,8 @@
         <script type="text/javascript" src="components/pg.blocks/js/plugins.js"></script>
         <script type="text/javascript" src="components/pg.blocks/js/bskit-scripts.js"></script>
         <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyAaFB7tdUVMzKmxshMG9znVCz13SDm7Lgs&sensor=true"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/MhdAljuboori/fc08b6eb45fbc2e724b4/raw/animator-pro.js"></script>
+
+        <script src="js/preload.js"></script>
     </body>
 </html>
