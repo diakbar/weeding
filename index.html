@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>Adhitya & Aneta's Wedding</title>
         <!-- Bootstrap Core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom Fonts -->
@@ -31,11 +31,21 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
         <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
     </head>
-    <body id="page-top" class="index">
+    <body id="page-top" class="index unloaded">
         <!-- Preload Page -->
         <div id="loader-wrapper">
-            <div id="loader"></div>
-
+        
+            <!-- <div id="loader"></div> -->
+        <div class="cssload-wrap">
+            <div class="cssload-main">
+                <div class="cssload-heart">
+                    <span class="cssload-heartL"></span>
+                    <span class="cssload-heartR"></span>
+                    <span class="cssload-square"></span>
+                </div>
+                <div class="cssload-shadow"></div>
+            </div>
+        </div>
             <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
 
@@ -44,7 +54,7 @@
         <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top navigasi-atas pad5">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand page-scroll navbar-bg white guardsman-hover" href="#page-top">Adhitya &amp; Aneta</a>
+                <a id="welcome-message" class="navbar-brand page-scroll black bg-white navbar-bg black-hover" href="#page-top">Adhitya &amp; Aneta</a>
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span> Menu 
@@ -122,6 +132,10 @@
             </div>
             <!-- /.container -->
         </section>
+
+        <div class="map min-height-500px" data-map-zoom="15" data-map-lat="-7.336694" data-map-long="112.715449" data-marker-image="img/love-marker.png"></div>
+
+
         <!-- Services Section -->
         <section id="wedding" class="bg-white pad25 pad-bottom20" data-animation-pro-1 style="" data-animation-pro-trigger-1="scroll" data-animation-pro-target-1=".info-akad, .info-resepsi, .wedding-title" data-animation-pro-duration-1="500" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-easing-1="linear" data-animation-pro-add-classes-1="test" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-target-2=".info-akad, .info-resepsi, .wedding-title" data-animation-pro-easing-2="linear" data-animation-pro-duration-2="500" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-200px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-target-3=".info-akad, .info-resepsi, .wedding-title" data-animation-pro-easing-3="ease-out-quad" data-animation-pro-duration-3="500" data-animation-pro-init-state-3="opacity:1;" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-100px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-target-4=".info-akad, .info-resepsi, .wedding-title" data-animation-pro-easing-4="ease-out-cubic" data-animation-pro-duration-4="500" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="350px">
             <div class="container">
@@ -144,14 +158,11 @@
                 </div>
             </div>
         </section>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-</div>
-        </div>
+
         <section id="content-1-2" class="content-block pad-bottom30 content-1-2 pad20">
             <div class="container">
                 <!-- Start Row -->
-                <div class="row">
+                <div class="row" data-animation-pro-1 style="opacity:0;" data-animation-pro-trigger-1="scroll" data-animation-pro-easing-1="ease-in-out-quad" data-animation-pro-step-1-1="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-1="true" data-animation-pro-scroll-direction-1="down" data-animation-pro-offset-1="300px" data-animation-pro-init-state-1="opacity:0;" data-animation-pro-2 data-animation-pro-trigger-2="scroll" data-animation-pro-step-1-2="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-2="true" data-animation-pro-scroll-direction-2="down" data-animation-pro-offset-2="-100px" data-animation-pro-3 data-animation-pro-trigger-3="scroll" data-animation-pro-easing-3="ease-in-quad" data-animation-pro-step-1-3="opacity:1;" data-animation-pro-enable-sd-scroll-trigger-3="true" data-animation-pro-scroll-direction-3="up" data-animation-pro-offset-3="-150px" data-animation-pro-4 data-animation-pro-trigger-4="scroll" data-animation-pro-easing-4="ease-in-quad" data-animation-pro-step-1-4="opacity:0;" data-animation-pro-enable-sd-scroll-trigger-4="true" data-animation-pro-scroll-direction-4="up" data-animation-pro-offset-4="300px">
                     <div class="col-sm-6 rute">
                         <h2><h3><i class="fa-plane fa mdi-action-aspect-ratio fa-border"></i>Rute menuju Lokasi Acara</h3></h2>
                         <ul class="collapsible" data-collapsible="accordion"> 
@@ -190,9 +201,9 @@
                 <!--// END Row -->
             </div>
         </section>
-        <div class="map min-height-500px" data-map-zoom="15" data-map-lat="-7.336694" data-map-long="112.715449" data-marker-image="img/love-marker.png"></div>
-        <section id="bridegroom" class="bg-light-gray pad60 pad-bottom30">
-            <div class="row">
+
+        <section id="bridegroom" class="bg-light-gray pad-bottom30">
+            <div class="">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Brides and Groom</h2>
                 </div>
@@ -238,6 +249,7 @@
                 </div>
             </div>
         </section>
+
         <section id="story" class="story-of-us-section pad45 pad-bottom60">
             <div class="container">
                 <div class="row pad-bottom30">
