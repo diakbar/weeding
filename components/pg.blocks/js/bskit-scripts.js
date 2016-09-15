@@ -86,6 +86,7 @@ $(document).ready(function(){
 
 
 /* -------- Google Map -------- MTCH */
+var map;
 function initMap(elem) {
 
     var $e = $(elem);
@@ -125,18 +126,19 @@ function initMap(elem) {
             '<h3><center>Resepsi+Akad Nikah</center></h3>' +
             '<div class="info-content">' +
             '<center><p>Masjid Nasional Al - Akbar Surabaya</p></center>' +
-            '<center><a href="https://maps.google.com?saddr=Current+Location&daddr=masjid+al+akbar+surabaya">GET DIRECTION</a></center>'+
+            '<center><a href="https://maps.google.com?saddr=Current+Location&daddr=masjid+al+akbar+surabaya" style="font-size:20px">GET DIRECTION</a></center>'+
             '</div>' +
             '</div>' 
     var infowindow = new google.maps.InfoWindow({
         content: contentString,
-        position: (-7.336694,112.715449),
+        position: (-7.336694, 112.715449),
         maxWidth: 400
     });                
     var map = new google.maps.Map($e.get(0), mapOptions);
     var marker = new google.maps.Marker({
     	icon: marker_image,
         map: map,
+        animation:google.maps.Animation.DROP,
         position: map.getCenter() 
     });
     infowindow.open(map, marker);

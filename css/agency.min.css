@@ -154,7 +154,7 @@ a.active,a:active,a:focus,a:hover
 {
     background-color: #C2185B;
     border-color: #C2185B;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 .navbar-custom .navbar-toggle:focus,.navbar-custom .navbar-toggle:hover
@@ -222,7 +222,7 @@ a.active,a:active,a:focus,a:hover
 
 header
 {
-    background-image: url('../img/anetnyu.jpg');
+    /*background-image: url('../img/anetnyu.jpg');*/
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -295,6 +295,8 @@ header .intro-text .intro-heading
 section
 {
     padding: 100px 0;
+    background-color: #fffff5;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 section h2.section-heading
@@ -644,7 +646,6 @@ footer span.copyright,footer ul.quicklinks
 .brides, .groom img
 {
     margin: 0 auto;
-    border: 7px solid #fff;
 }
 
 .brides, .groom h4
@@ -928,7 +929,7 @@ peta-acara
         position: absolute;
         width: 100%;
         min-height: 10%;
-        background-image: url('../img/anetnyu.jpg');
+        /*background-image: url('../img/anetnyu.jpg');*/
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center center;
@@ -1391,3 +1392,21 @@ peta-acara
         border-color: rgb(228,228,228);
     }
 }
+.container-story-section {
+    margin-top: -50px;
+}
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+    padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+    top: 0;
+    bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+    padding: 0;
+}
+

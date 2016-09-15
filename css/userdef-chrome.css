@@ -1,0 +1,12 @@
+/*audio player style*/
+
+.audio-container{
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: -50px 0 0 -75px;
+  cursor: pointer;
+  z-index: 140
+}
