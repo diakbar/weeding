@@ -5436,8 +5436,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 {
     float: left;
     height: 50px;
-    /*padding: 15px 15px;*/
-    padding-top:1.5%;
+    padding-top: 1.5%;
     padding-left: 1%;
     font-size: 18px;
     line-height: 20px;
@@ -5469,7 +5468,6 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
     position: relative;
     float: right;
     padding: 9px 10px;
-    /*margin-top: 8px;*/
     margin-top: 4%;
     margin-right: 5%;
     margin-bottom: 8px;
@@ -5478,6 +5476,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
     border: 1px solid transparent;
     border-radius: 4px;
 }
+
 
 .navbar-toggle:focus
 {

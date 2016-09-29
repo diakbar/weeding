@@ -25,6 +25,6 @@ $(document).ready(function() {
 jQuery(window).load(function () {
 	$('body').removeClass('unloaded');
 	$('body').addClass('loaded');
-	document.getElementById("welcome-message").className = "navbar-brand page-scroll navbar-bg white guardsman-hover";
+	// document.getElementById("welcome-message").className = "navbar-brand page-scroll navbar-bg white guardsman-hover";
 
 });

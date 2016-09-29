@@ -36,3 +36,127 @@
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }
+
+/* Gambar depan */
+@media (min-width:768px){
+.gambar-selamat-datang{  
+    position: fixed;
+    z-index: 1040;
+    top: 1%;
+}
+.affix-top .gambar-selamat-datang img{
+  width: 13em;
+  height: auto;
+  animation: Floatingx 3s ease-in-out infinite;
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}.affix .gambar-selamat-datang img{
+  margin-top: 5%;
+  margin-left: 50%;
+  width: 8em;
+  animation: Floatingx 3s ease-in-out infinite;
+  height: auto;
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+}
+@media (max-width:700px){
+.gambar-selamat-datang{  
+    position: fixed;
+    z-index: 1040;
+    top: 1%;
+    visibility: hidden;
+}
+.affix-top .gambar-selamat-datang img{
+    width: 13em;
+    height: auto;
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}.affix .gambar-selamat-datang img{
+  margin-top: 5%;
+    margin-left: 50%;
+    width: 5em;
+    height: auto;
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(0.0);
+  }
+  7%, 90% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+
+ @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        65% {-webkit-transform: scale(1.0);}
+        to {-webkit-transform: scale(0.9);}    
+    }
+        
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        65% {-moz-transform: scale(1.0);}
+        to {-moz-transform: scale(0.9);}    
+    }
+
+@keyframes scale {
+    from {
+        transform: scale(.9)
+    }
+
+    65% {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(.9)
+    }
+}
+.typer,
+.type-once{
+  color: #F1569D !important;
+  font-size: 28px;
+  font-family: 'Satisfy','Lato', Helvetica, Arial, sans-serif;
+}
+
+.welcome-message{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    font-size: 2em;
+}
+
+.unloaded .loading-gan {
+  position: relative;
+  margin-top: -40px;
+  top: 50%;
+  width: 260px;
+  height: 55px;
+  margin-left: -130px;
+  cursor: pointer; 
+  left: 50%;
+  font-size: 47px;
+  color: #556270;
+  z-index: 1200;
+}

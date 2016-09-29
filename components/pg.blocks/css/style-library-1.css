@@ -16,8 +16,8 @@ Version: 1.0
 body
 {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    color: #333333;
-    background: #ffffff;
+    color: #ffffff;
+    background: #333333;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -399,7 +399,7 @@ body
 
 .guardsman
 {
-    color: #C2185B !important;
+    color: #F06292 !important;
 }
 
 .pomegranate
@@ -524,7 +524,7 @@ body
 
 .guardsman-hover:hover
 {
-    color: #C2185B !important;
+    color: #F06292 !important;
 }
 
 .pomegranate-hover:hover
@@ -539,7 +539,7 @@ body
 
 .tamarind-hover:hover
 {
-    color: #C2185B !important;
+    color: #F06292 !important;
 }
 
 .no-shadow
@@ -1991,7 +1991,7 @@ fieldset[disabled] .form-control
 
 .maps-a
 {
-    color: #C2185B !important;
+    color: #F06292 !important;
 }
 
 .maps-alink

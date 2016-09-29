@@ -222,7 +222,7 @@ a.active,a:active,a:focus,a:hover
 
 header
 {
-    /*background-image: url('../img/anetnyu.jpg');*/
+    /*background-image: url('../img/welcome.jpg');*/
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -949,7 +949,7 @@ peta-acara
     }
 }
 
-@media (max-width:479px)
+@media (max-width:700px)
 {
     .navbar-brand
     {
@@ -1085,8 +1085,6 @@ peta-acara
 .cssload-wrap {
     position: relative;
     margin: 0 auto 0;
-    left: 50%;
-    top: 50%;
     z-index: 1200;
 }
 
@@ -1409,4 +1407,3 @@ peta-acara
 .mfp-no-margins .mfp-container {
     padding: 0;
 }
-

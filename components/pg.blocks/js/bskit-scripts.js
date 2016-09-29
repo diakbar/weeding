@@ -87,8 +87,9 @@ $(document).ready(function(){
 
 /* -------- Google Map -------- MTCH */
 var map;
+var infowindow;
 function initMap(elem) {
-
+    var lokasinya = {lat: -7.336694, lng: 112.715449};
     var $e = $(elem);
 	if($e.length==0){
 		return 0;
@@ -128,31 +129,67 @@ function initMap(elem) {
             '<center><p>Masjid Nasional Al - Akbar Surabaya</p></center>' +
             '<center><a href="https://maps.google.com?saddr=Current+Location&daddr=masjid+al+akbar+surabaya" style="font-size:20px">GET DIRECTION</a></center>'+
             '</div>' +
-            '</div>' 
+            '</div>'
+
     var infowindow = new google.maps.InfoWindow({
         content: contentString,
         position: (-7.336694, 112.715449),
         maxWidth: 400
-    });                
-    var map = new google.maps.Map($e.get(0), mapOptions);
-    var marker = new google.maps.Marker({
+    });
+
+    map = new google.maps.Map($e.get(0), mapOptions);
+    var marker_acara = new google.maps.Marker({
     	icon: marker_image,
         map: map,
         animation:google.maps.Animation.DROP,
         position: map.getCenter() 
     });
-    infowindow.open(map, marker);
-        marker.addListener('click', function () {
-            infowindow.open(map, marker);
+
+    infowindow.open(map, marker_acara);
+        marker_acara.addListener('click', function () {
+            infowindow.open(map, marker_acara);
         });
 
+// Nearby Function
+    // infowindowNearby = new google.maps.InfoWindow();
+// 
+    // var service = new google.maps.places.PlacesService(map);
+    // service.nearbySearch({
+    // location: lokasinya,
+    // radius: 500,
+    // types: ['room']
+  // }, callback);
 }
 
 function initMaps() {
     $('.map').each(function(i, e) {
         initMap(e);
     })
+
 }
+
+
+// function callback(results, status) {
+  // if (status === google.maps.places.PlacesServiceStatus.OK) {
+    // for (var i = 0; i < results.length; i++) {
+      // createMarker(results[i]);
+    // }
+  // }
+// 
+// }
+// 
+// function createMarker(place) {
+  // var placeLoc = place.geometry.location;
+  // var marker2 = new google.maps.Marker({
+    // map: map,
+    // position: place.geometry.location
+  // });
+  // var request = { reference: place.reference };
+  // google.maps.event.addListener(marker2, 'click', function() {
+    // infowindowNearby.setContent(place.name);
+    // infowindowNearby.open(map, this);
+  // });
+// }
 //end Google Map
 
 
