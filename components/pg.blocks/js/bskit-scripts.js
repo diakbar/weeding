@@ -44,11 +44,15 @@ function count(elem){
     compareResult = dates.compare(dateOfEnd,dateOfBeginning)
 
     if(compareResult === -1){
+      // On Hari Nikah 2016-12-18 
       countUp(dateOfBeginning, dateOfEnd);
-      document.getElementById("wording-countdown").innerHTML = "Counting Up The Wedding 18 December 2016";
+      document.getElementById("wording-countdown").innerHTML = "Live Stream The Wedding - 18 December 2016";
+      document.getElementById("button-rsvp").innerHTML = "LiveStream";
       document.getElementById("rsvp-now").remove();
+      document.getElementById("hitung-mundur-jam").remove();
     }
     else{
+      // Before Hari Nikah 2016-12-18
       countDown(dateOfBeginning, dateOfEnd);
       document.getElementById("streaming-youtube").remove(); // remove id youtube, save it for later :)
       document.getElementById("embed-responsive-16by9").remove(); // remove id youtube, save it for later :)
