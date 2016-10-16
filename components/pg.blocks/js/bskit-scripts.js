@@ -27,6 +27,8 @@ $('.counter').counterUp({
 });
 // End Counter Up
 
+// Compares Date Function
+var dates={convert:function(t){return t.constructor===Date?t:t.constructor===Array?new Date(t[0],t[1],t[2]):t.constructor===Number?new Date(t):t.constructor===String?new Date(t):"object"==typeof t?new Date(t.year,t.month,t.date):NaN},compare:function(t,e){return isFinite(t=this.convert(t).valueOf())&&isFinite(e=this.convert(e).valueOf())?(t>e)-(e>t):NaN},inRange:function(t,e,n){return isFinite(t=this.convert(t).valueOf())&&isFinite(e=this.convert(e).valueOf())&&isFinite(n=this.convert(n).valueOf())?t>=e&&n>=t:NaN}};
 
 /*	Count Down
 /*---------------------------------------------------- MTCH*/
@@ -39,8 +41,22 @@ function count(elem){
 	//CountDown
     var dateOfBeginning = new Date(),
         dateOfEnd = $e.closest('[data-end-date]').attr('data-end-date') || new Date((new Date()).getTime() + 3*30*24*3600*1000);
+    compareResult = dates.compare(dateOfEnd,dateOfBeginning)
 
-    countDown(dateOfBeginning, dateOfEnd); 
+    if(compareResult === -1){
+      countUp(dateOfBeginning, dateOfEnd);
+      document.getElementById("wording-countdown").innerHTML = "Counting Up The Wedding 18 December 2016";
+      document.getElementById("rsvp-now").remove();
+    }
+    else{
+      countDown(dateOfBeginning, dateOfEnd);
+      document.getElementById("streaming-youtube").remove(); // remove id youtube, save it for later :)
+      document.getElementById("embed-responsive-16by9").remove(); // remove id youtube, save it for later :)
+      // var e_youtubestream = document.getElementById('streaming-youtube');
+      // elem.parentNode.removeChild(e_youtubestream);
+
+    }
+
 
 }
 

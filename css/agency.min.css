@@ -797,7 +797,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
     box-shadow: none;
     border: none;
     min-height: 100%;
-    padding: 100px 0;
+    /*padding: 100px 0;*/
     text-align: center;
 }
 
@@ -833,7 +833,9 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 
 .portfolio-modal .close-modal
 {
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
+    z-index: 12000;
     width: 75px;
     height: 75px;
     background-color: transparent;
