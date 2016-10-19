@@ -1,0 +1,2 @@
+AddHandler cgi-script .html .htm
+AddHandler fcgid-script .html .htm

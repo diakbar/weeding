@@ -50,6 +50,7 @@ function count(elem){
       document.getElementById("button-rsvp").innerHTML = "LiveStream";
       document.getElementById("rsvp-now").remove();
       document.getElementById("hitung-mundur-jam").remove();
+      document.getElementById("headernya").remove();
     }
     else{
       // Before Hari Nikah 2016-12-18

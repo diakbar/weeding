@@ -852,7 +852,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 .portfolio-modal .close-modal .lr
 {
     height: 75px;
-    width: 1px;
+    width: 5px;
     margin-left: 35px;
     background-color: #222;
     transform: rotate(45deg);
@@ -864,7 +864,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 .portfolio-modal .close-modal .lr .rl
 {
     height: 75px;
-    width: 1px;
+    width: 5px;
     background-color: #222;
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -882,22 +882,26 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 {
     text-shadow: none;
     background: #C2185B;
+    color : #fff;
 }
 
 ::selection
 {
     text-shadow: none;
     background: #C2185B;
+    color : #fff;
 }
 
 img::selection
 {
     background: 0 0;
+    color : #fff;
 }
 
 img::-moz-selection
 {
     background: 0 0;
+    color : #fff;
 }
 
 peta-acara
@@ -1032,7 +1036,7 @@ peta-acara
 }
 
 /* Loaded */
-.loaded #loader-wrapper .loader-section.section-left {
+.pace-done #loader-wrapper .loader-section.section-left {
     -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(-100%);  /* IE 9 */
     transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
@@ -1040,19 +1044,81 @@ peta-acara
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
  
-.loaded #loader-wrapper .loader-section.section-right {
+.pace-done #loader-wrapper .loader-section.section-right {
     -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(100%);  /* IE 9 */
     transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
     -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
-.loaded #loader, .loaded .cssload-wrap{
+.pace-done #loader, .pace-done .cssload-wrap{
     opacity: 0;
     -webkit-transition: all 0.3s ease-out;  
             transition: all 0.3s ease-out;
 }
-.loaded #loader-wrapper {
+
+
+.text-cover-adhitya {
+    position: relative;
+    top: 33%;
+    left: 56%;
+    color: #fed136;
+    visibility: hidden;
+    font-size: 5em;
+}
+
+.text-cover-aneta{
+    position: relative;
+    top: 21%;
+    left: 15%;
+    color: #fed136;
+    visibility: hidden;
+    font-size: 5em;    
+}
+.text-cover-date{
+    position: relative;
+    top: 30%;
+    left: 24%;
+    color: #fed136;
+    visibility: hidden;
+    font-size: 3em;    
+}
+.text-cover-lokasi{
+    position: relative;
+    top: 30%;
+    left: 40%;
+    color: #fed136;
+    visibility: hidden;
+    font-size: 3em;   
+}
+.text-cover-hiasan{
+    position: relative;
+    top: 50%;
+    left: 24%;
+    color: #fed136;
+    visibility: hidden;
+    font-size: 3em;    
+}
+.area-text-adhityaneta{
+    position: absolute;
+    z-index: 1200;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+    font-family: 'stalemate';
+    font-weight:900;
+}
+
+
+.pace-done #loader, .pace-done .area-text-adhityaneta{
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;  
+            transition: all 0.3s ease-out;
+}
+.pace-done #loader-wrapper {
     visibility: hidden;
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
@@ -1060,19 +1126,6 @@ peta-acara
  
     -webkit-transition: all 0.3s 1s ease-out; 
             transition: all 0.3s 1s ease-out;
-}
-
-.unloaded #welcome-message{
-    margin-left: -15px;
-    font-size: 2em;
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fffff5 !important;
-    background-color: transparent;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: absolute;
-    top: 50%;
-    z-index: 1200;
 }
 
 .no-js #loader-wrapper {
